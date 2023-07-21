@@ -1,4 +1,4 @@
-# https://microservices.io/patterns/communication-style/messaging.html
+# Microservice Messaging Patterns
 
 [Microservices Pattern: Messaging](https://microservices.io/patterns/communication-style/messaging.html)
 
