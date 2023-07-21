@@ -10,7 +10,7 @@ When status is completed, can either return 200 and body success/complete status
 
 Or auto redirect to url of newly created resource and return this as the body
 
-![Untitled](Asynchronous%20Request-Reply%20pattern%20c26ea326959c462d8adab5fc49ea66e1/Untitled.png)
+![Untitled](Asynchronous%20Request-Reply%20pattern/polling.png)
 
 An HTTP 202 response should indicate the location and frequency that the client should poll for the response. It should have the following additional headers:
 

@@ -14,14 +14,13 @@ Typically need lots of information to be sent in the message body.
 
 This is usually seen as one subscriber to one one topic
 
-![Untitled](Architectural%20messaging%20patterns%20an%20illustrated%20gu%204325ecaeaeab4332b9f909a35cef0aa0/Untitled.png)
+![pub-sub](architectural-messaging-patterns-an-illustrated-guide/pub-sub.png)
 
 ### Fanout
 
 Same concepts as pub-sub but multiple subscribers are listening to a topic e.g Booking cancelled in Seaware. Activities Service cancels booked activities. F&B service cancels table booking.
 
-![Untitled](Architectural%20messaging%20patterns%20an%20illustrated%20gu%204325ecaeaeab4332b9f909a35cef0aa0/Untitled%201.png)
-
+![fan-out](architectural-messaging-patterns-an-illustrated-guide/fan-out.png)
 ### ****Unidirectional streaming****
 
 Data is constantly being sent from a published to a subscriber, either directly or via a message broker.
@@ -36,7 +35,7 @@ Constant flow of data back a forth. Example is gRPC, which, once connection is e
 
 App sends API requests. Internet knows how find API endpoint location, API sends response back.
 
-![Untitled](Architectural%20messaging%20patterns%20an%20illustrated%20gu%204325ecaeaeab4332b9f909a35cef0aa0/Untitled%202.png)
+![unicast](architectural-messaging-patterns-an-illustrated-guide/unicast.png)
 
 ### Broadcast
 
@@ -45,16 +44,16 @@ Senders emits message to all receivers on network
 > Under ARP, the router knows the physical devices on the network and then correlates the device identifier, the MAC address, to the logical IP address, and then forwards the message accordingly.
 > 
 
-![Untitled](Architectural%20messaging%20patterns%20an%20illustrated%20gu%204325ecaeaeab4332b9f909a35cef0aa0/Untitled%203.png)
+![broadcast](architectural-messaging-patterns-an-illustrated-guide/broadcast.png)
 
 ### ****Multicast****
 
 Similar to broadcast but can have multiple groups of receivers. Live broadcasts over internet involve sender sending message to group of devices people are watching stream on.
 
-![Untitled](Architectural%20messaging%20patterns%20an%20illustrated%20gu%204325ecaeaeab4332b9f909a35cef0aa0/Untitled%204.png)
+![multicast](architectural-messaging-patterns-an-illustrated-guide/multicast.png)
 
 ### ****Anycast****
 
 Receiver must meet certain conditions for the router to send a message to it 
 
-![Untitled](Architectural%20messaging%20patterns%20an%20illustrated%20gu%204325ecaeaeab4332b9f909a35cef0aa0/Untitled%205.png)
+![anycast](architectural-messaging-patterns-an-illustrated-guide/anycast.png)
