@@ -11,6 +11,8 @@ When status is completed, can either return 200 and body success/complete status
 Or auto redirect to url of newly created resource and return this as the body
 
 ![polling](asynchronous-request-reply-pattern/polling.png)
+*Image source: https://learn.microsoft.com/en-us/azure/architecture/patterns/_images/async-request.png*
+
 
 An HTTP 202 response should indicate the location and frequency that the client should poll for the response. It should have the following additional headers:
 
