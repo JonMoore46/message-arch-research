@@ -1,4 +1,4 @@
-# Asynchronous Request-Reply pattern
+# Asynchronous Request Reply Pattern
 
 [Asynchronous Request-Reply pattern - Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/patterns/async-request-reply)
 
@@ -10,7 +10,7 @@ When status is completed, can either return 200 and body success/complete status
 
 Or auto redirect to url of newly created resource and return this as the body
 
-![Untitled](Asynchronous%20Request-Reply%20pattern/polling.png)
+![polling](asynchronous-request-reply-pattern/polling.png)
 
 An HTTP 202 response should indicate the location and frequency that the client should poll for the response. It should have the following additional headers:
 
